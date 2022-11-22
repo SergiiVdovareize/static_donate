@@ -403,6 +403,11 @@ body {
 	text-shadow: 0 0 5px black;
 }
 
+.theme-right-sector .number-recipient {
+	color: #ffb0b0;
+}
+
+
 /* BLUE THEME */
 .container.theme-blue {
 	color: #FFF401;
