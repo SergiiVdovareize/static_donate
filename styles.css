@@ -56,6 +56,10 @@ body {
 	height: 100%;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
