@@ -204,11 +204,13 @@ body {
     mask-image: url(img/logo/paypal.svg);
 }
 
-.card-number-block:hover {
+.card-number-block:hover,
+.content-number-block:hover {
 	cursor: pointer;
 }
 
-.card-number-block:active .card-number {
+.card-number-block:active .card-number,
+.content-number-block.card-number:active {
 	color: #c22d00;
 	text-shadow: 0 0 5px #e74100;
 }
@@ -217,11 +219,13 @@ body {
 	background-color: white;
 }
 
-.card-number-block.copied #copied-description {
+.card-number-block.copied #copied-description,
+.content-number-wrapper.copied #copied-description {
 	display: block;
 }
 
-.card-number-block.copied #copy-suggestion {
+.card-number-block.copied #copy-suggestion,
+.content-number-wrapper.copied #copy-suggestion {
 	display: none;
 }
 
@@ -255,7 +259,12 @@ body {
     mask-image: url(img/copy-text.svg);
 }
 
-.card-number-block:not(:active) .card-number {
+.low-content::after {
+	margin-bottom: -4px;
+}
+
+.card-number-block:not(:active) .card-number,
+.content-number-wrapper .card-number:not(:active) {
 	transition-property: color, text-shadow;
 	transition-duration: 2s;
 }
@@ -398,7 +407,8 @@ body {
 	background-color: #272727;
 }
 
-.theme-right-sector .card-number-block:active .card-number {
+.theme-right-sector .card-number-block:active .card-number,
+.theme-right-sector .content-number-wrapper .card-number:active {
 	color: black;
 	text-shadow: 0 0 5px black;
 }
